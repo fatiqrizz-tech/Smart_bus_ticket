@@ -1,0 +1,15 @@
+SMART BUS RESERVATION SYSTEM — TEST CHECKLIST
+
+TC-01 View routes: expected all five sample routes.
+TC-02 Search Hyderabad: expected routes departing from or arriving at Hyderabad.
+TC-03 Search Atlantis: expected no-match message.
+TC-04 Book 2 seats on R101: expected Rs. 2,400 and available seats drop from 40 to 38.
+TC-05 Empty name: expected rejection without changing seats.
+TC-06 Age 0 or negative: expected rejection.
+TC-07 Book more seats than available: expected rejection and no negative availability.
+TC-08 Cancel a confirmed booking: expected status Cancelled and correct seats restored.
+TC-09 Cancel the same booking again: expected rejection with no second restoration.
+TC-10 Empty booking report: expected zero booking totals/revenue.
+TC-11 Report after cancellation: cancelled booking retained in history; its fare excluded from confirmed revenue.
+TC-12 Invalid console menu choice: expected friendly error and continued menu.
+Run these tests and record actual results before submission.
